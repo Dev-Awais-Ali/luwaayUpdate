@@ -1,0 +1,22 @@
+header.header.header--photo(data-sticky='true')
+    .ps-logo: img(src="img/logo-photo.png" alt="")
+    .header__content
+        ul.menu.menu--photo
+            li: a(href='#'): strong Sell Stocks
+            li: a(href='#') Contact
+            li: a(href='#') Blog
+        .header__actions
+            .header__language
+                i.icon-network
+                select.ps-select
+                    option(value=1) Eng
+                    option(value=2) Francais
+            .ps-cart--mini
+                a(href='#').header__extra
+                    i.icon-bag2
+                    span: i 0
+                //-include mini-cart
+            .ps-block--user-header
+                .ps-block__left: i.icon-user
+                .ps-block__right
+                    a(href='my-account.html') Login/ Register

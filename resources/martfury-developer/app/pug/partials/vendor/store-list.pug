@@ -1,0 +1,40 @@
+section.ps-store-list
+    .container
+        .ps-section__header
+            h3 Store list
+        .ps-section__wrapper
+            .ps-section__left
+                include modules/sidebar-store-list
+            .ps-section__right
+                section.ps-store-box
+                    .ps-section__header
+                        p Showing 1 -8 of 22 results
+                        select.ps-select
+                            option(value=1) Sort by Newest: old to news
+                            option(value=2) Sort by Newest: New to old
+                            option(value=3) Sort by average rating: low to hight
+                    .ps-section__content
+                        .row
+                            each store in storeList.stores
+                                +column({cols: [6, 6, 6, 12, 12]})
+                                    article.ps-block--store
+                                        .ps-block__thumbnail.bg--cover(data-background=store.thumbnail)
+                                        .ps-block__content
+                                            .ps-block__author
+                                                a(href='#').ps-block__user: img(src=store.user alt="")
+                                                a(href='#').ps-btn Visit Store
+                                            h4 #{store.name}
+                                            +rating(true)
+                                            p 325 Orchard, Buenos Aires, Formosa Argentina
+                                            ul.ps-block__contact
+                                                li
+                                                    i.icon-envelope
+                                                    a(href='mailto:contact@xhome.com') contact@xhome.com
+                                                li
+                                                    i.icon-telephone
+                                                    |  (+093) 77-637-3300
+                                            .ps-block__inquiry
+                                                a(href='#')
+                                                    i.icon-question-circle
+                                                    |  inquiry
+                        +pagination

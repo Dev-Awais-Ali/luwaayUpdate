@@ -1,0 +1,36 @@
+section.ps-store-list
+    .container
+        include modules/store-banner
+        .ps-section__wrapper
+            .ps-section__left
+                include modules/sidebar-store-detail
+            .ps-section__right
+                nav.ps-store-link
+                    ul
+                        li.active: a(href='store-detail.html') Products
+                        li: a(href='store-detail-info.html') About
+                        li: a(href='store-detail.html') Policies
+                        li: a(href='store-detail.html') Reviews(0)
+                .ps-shopping.ps-tab-root
+                    .ps-shopping__header
+                        p <strong> #{home_2_recommend_for_you.length}</strong> Products found
+                        .ps-shopping__actions
+                            .ps-shopping__view
+                                p View
+                                ul.ps-tab-list
+                                    li.active: a(href='#tab-1'): i.icon-grid
+                                    li: a(href='#tab-2'): i.icon-list4
+                    .ps-tabs
+                        #tab-1.ps-tab.active
+                            .ps-shopping-product
+                                .row
+                                    each val, index in home_2_recommend_for_you
+                                        if index < 12
+                                            +column({cols: [3, 4, 4, 6, 6]})
+                                                +product(val)
+                            +pagination
+                        #tab-2.ps-tab
+                            .ps-shopping-product
+                                each val, index in home_2_recommend_for_you
+                                    if index < 12
+                                        +product-wide(val)

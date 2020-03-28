@@ -1,0 +1,27 @@
+extends ../../master
+
+block data
+    include ../../data/shop/shop-data
+    include ../../data/shop/shop-sidebar-links
+    include ../../data/home-10/home-data
+
+block append style
+    link(rel="stylesheet", href="css/autopart.css")
+    link(rel="stylesheet", href="css/vendor.css")
+
+block page_header
+    include ../../shared/headers/header-automart
+    include ../../shared/headers/header-mobile-autopart
+
+block page_content
+    .ps-page--single.ps-page--vendor
+        .ps-breadcrumb
+            .container
+                ul.breadcrumb
+                    li: a(href='index.html') Home
+                    li Store List
+        include ../../partials/vendor/store-list
+    include ../../partials/sections/newsletter
+    include ../../shared/footers/footer-2
+
+

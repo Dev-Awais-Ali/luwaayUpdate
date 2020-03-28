@@ -1,0 +1,37 @@
+.ps-block--products-of-category
+    .ps-block__categories
+        h3 Baby Out
+        ul
+            li: a(href='#') Best Seller
+            li: a(href='#') New Arrivals
+            li: a(href='#') Strollers
+            li: a(href='#') Kids Scooters
+            li: a(href='#') Travel Gears
+            li: a(href='#') Car Seat
+            li: a(href='#') Hipseat Carrier
+            li: a(href='#') Car Electronic
+            li: a(href='#') Sales & Deals
+        a(href='#').ps-block__more-link View All
+    .ps-block__slider
+        .ps-carousel--product-box.owl-slider(v
+        data-owl-auto= 'true',
+        data-owl-loop= 'true',
+        data-owl-speed= '7000',
+        data-owl-gap= '0',
+        data-owl-nav= 'true',
+        data-owl-dots= 'true',
+        data-owl-item= '1',
+        data-owl-item-xs= '1',
+        data-owl-item-sm= '1',
+        data-owl-item-md= '1',
+        data-owl-item-lg= '1',
+        data-owl-duration= '500',
+        data-owl-mousedrag= 'off'
+        )
+            a(href='#'): img(src="img/slider/home-kids/baby-out-1.jpg" alt="")
+            a(href='#'): img(src="img/slider/home-kids/baby-out-2.jpg" alt="")
+            a(href='#'): img(src="img/slider/home-kids/baby-out-3.jpg" alt="")
+    .ps-block__product-box
+        each product, index in babyOut
+            if index < 6
+                +product-simple(product, 'clothing')

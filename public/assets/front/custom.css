@@ -1,0 +1,217 @@
+/* control image height */
+.card-img-top-200 {
+    max-height: 200px;
+    overflow:hidden;
+}
+.card-img-top-150 {
+    max-height: 200px;
+    overflow:hidden;
+}
+
+/* [1] The container */
+.img-hover-zoom {
+  height: 300px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+  opacity: 0.7;
+}
+.centered {
+  position: absolute;
+  top: 85%;
+  left: 20%;
+  font-weight: bolder;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+.ps-my-account{
+  border-bottom:2px solid #e1e1e1 !important;
+}
+
+/*index page category nav*/
+#nav_category{
+  margin-bottom: 50px;
+  text-align: center;
+  background-color: #fcb800;
+  padding: 16px 20px
+}
+.ps-block--site-features{
+  border: 1px solid #fcb800 !important;
+}
+
+
+.ps-product-list .ps-section__header {
+  background-color: #fcb800 !important;
+  border-bottom: 0px;
+}
+.ps-product-list .ps-section__links li a:hover{
+ color: black !important;
+}
+
+/*#homepage-1 .ps-top-categories {
+  padding: 0px 0 50px !important;
+}*/
+.header .header__extra > i:hover {
+ color: #fcb800 !important;
+}
+
+
+
+.header .header__top {
+  background-color: white !important;
+}
+.header--organic .ps-form--quick-search button{
+  background-color: #fcb800 !important;
+}
+
+
+.ps-footer{
+
+    background-color: #e1e1e1;
+  }
+.ps-copyright{
+  background-color: #f5eded;
+}
+.wt-fill-denim {
+    fill:#e1e1e1 !important;
+}
+.container .copyright{
+  background-color: white;
+}  
+
+.vendor-type{
+     left: 0;
+  /*  margin-left: 230px;*/
+    padding-top: 50px;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    min-height: 450px;
+    background-color: #b8bfc52e;
+}
+.vendor-type-padding{
+  padding-left: 35px !important;
+  padding-right: 35px !important;
+}
+
+.link-vendor{
+  margin-top: 20px;
+}
+
+/*registration form*/
+.ps-form--account{
+  max-width: 700px !important;
+  padding-top: 0px !important;
+  margin-bottom: 20px !important;
+}
+
+/*file upload*/
+.custom-file-input {
+  color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Select some files';
+  color: black;
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active {
+  outline: 0;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}
+/*Star Rating End*/
+
+.ratings {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: #b1b1b1;
+    overflow: hidden;
+}
+.full-stars {
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #ff5500;
+}
+.empty-stars:before, .full-stars:before {
+    content:"\2605\2605\2605\2605\2605";
+    font-size: 14px;
+}
+.empty-stars:before {
+    -webkit-text-stroke: 1px #ddd;
+    color:#ddd;
+}
+.full-stars:before {
+    -webkit-text-stroke: 1px #ff5500;
+}
+/* Webkit-text-stroke is not supported on firefox or IE */
+
+/* Firefox */
+@-moz-document url-prefix() {
+    .full-stars {
+        color: #ff5500;
+    }
+}
+.full-stars {
+    color: #ff5500;
+}
+.edit-info-area .upload-img .img img {
+    /* border-radius: 50%; */
+    width: 100%;
+    height: 100%;
+}
+.login-btn {
+    color: #fff !important;
+    cursor: pointer;
+    background-color: #ff5500;
+    border-color: #ff5500;
+    padding: 8px 12px;
+}
+/*Star Rating End*/
+.left-area{
+  display: inline-block;
+}
+.reviewimg{
+  height: 90px !important;
+}
+.ratingdiv{
+      margin-left: -38px;
+}
+/*.owl-stage{
+  width: auto !important;
+}
+.owl-item {
+  width: auto !important;
+}*/

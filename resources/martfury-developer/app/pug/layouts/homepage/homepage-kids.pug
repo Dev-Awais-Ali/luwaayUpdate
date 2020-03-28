@@ -1,0 +1,25 @@
+extends ../../master
+
+block data
+    include ../../utilties/product-mixins
+    include ../../data/home-1/home-products
+    include ../../data/home-kids/home-data
+    include ../../data/home-kids/menu-banner
+
+block append style
+    link(rel="stylesheet", href="css/home-kids.css")
+
+block page_header
+    include ../../shared/headers/header-kids
+    include ../../shared/headers/header-mobile--kids
+
+block page_content
+    #homepage-kids
+        .container
+            include ../../partials/homepages/home-kids/home-banner
+            include ../../partials/homepages/home-kids/home-collections
+            include ../../partials/homepages/home-kids/best-sale-brands
+            include ../../partials/homepages/home-kids/search-trending
+            include ../../partials/homepages/home-kids/product-boxes
+    include ../../shared/footers/footer-kids
+

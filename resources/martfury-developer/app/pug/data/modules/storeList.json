@@ -1,0 +1,28 @@
+{
+    "stores": [
+        {
+            "thumbnail": "img/vendor/store/1.jpg",
+            "user": "img/vendor/store/user/3.jpg",
+            "address": "325 Orchard, Buenos Aires, Formosa Argentina",
+            "name": "GoPro"
+        },
+        {
+            "thumbnail": "img/vendor/store/2.jpg",
+            "user": "img/vendor/store/user/4.jpg",
+            "address": "325 Orchard, Buenos Aires, Formosa Argentina",
+            "name": "Robert's Store"
+        },
+        {
+            "thumbnail": "img/vendor/store/3.jpg",
+            "user": "img/vendor/store/user/5.jpg",
+            "address": "325 Orchard, Buenos Aires, Formosa Argentina",
+            "name": "Youngshop"
+        },
+        {
+            "thumbnail": "img/vendor/store/1.jpg",
+            "user": "img/vendor/store/user/5.jpg",
+            "address": "325 Orchard, Buenos Aires, Formosa Argentina",
+            "name": "Global Offical"
+        }
+    ]
+}

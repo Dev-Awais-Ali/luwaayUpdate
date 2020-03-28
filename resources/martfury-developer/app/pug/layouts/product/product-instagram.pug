@@ -1,0 +1,28 @@
+extends ../../master
+
+block data
+    include ../../data/product/product-default
+
+block page_header
+    - let producSticky = menuProduct.layout.instagram;
+    +headerProductSticky(producSticky.img, producSticky.title)
+    include ../../shared/headers/product/header-for-product
+    include ../../shared/headers/product/header-mobile-product
+
+block page_content
+    .ps-breadcrumb
+        .ps-container
+            ul.breadcrumb
+                li: a(href='index.html') Home
+                li: a(href='shop-default.html') Clothing & Apparel
+                li: a(href='shop-default.html') Bags
+                li Unero Military Classical Backpack
+    .ps-page--product
+        .ps-container
+            include ../../partials/product/product-instagram
+            include ../../partials/product/modules/instagram-slider
+            include ../../partials/product/modules/related-product
+    include ../../partials/sections/newsletter
+    include ../../shared/footers/footer
+
+

@@ -1,0 +1,29 @@
+
+header.header.header--mobile.header--mobile-photo(data-sticky='true')
+    .navigation--mobile
+        .navigation__left: a(href='index.html').ps-logo: img(src="img/logo-photo.png" alt="")
+        .navigation__right
+            .header__actions
+                .ps-cart--mini
+                    a(href='#').header__extra
+                        i.icon-bag2
+                        span: i 0
+                    include modules/mini-cart
+                .ps-block--user-header
+                    .ps-block__left: i.icon-user
+                    .ps-block__right
+                        a(href='my-account.html') Login
+                        a(href='my-account.html') Register
+include cart-mobile
+//include navigation-mobile
+include navigation-footer
+//include search-sidebar
+
+#menu-mobile.ps-panel--sidebar
+    .ps-panel__header
+        h3 Menu
+    .ps-panel__content
+        ul.menu--mobile
+            li: a(href='#'): strong Sell Stocks
+            li: a(href='#') Contact
+            li: a(href='#') Blog

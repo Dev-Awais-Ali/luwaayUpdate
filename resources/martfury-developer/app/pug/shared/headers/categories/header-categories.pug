@@ -1,0 +1,37 @@
+include ../../../data/menu/menu-product-categories
+header.header.header--mobile.header--mobile-categories(data-sticky='true')
+    nav.navigation--mobile
+        .navigation__left
+            a(href='shop-default.html').header__back
+                i.icon-chevron-left
+                strong Shop
+        .navigation__right
+            .header__actions
+                .ps-cart--mini
+                    a(href='#').header__extra
+                        i.icon-bag2
+                        span: i 0
+                    include ../modules/mini-cart
+                .ps-block--user-header
+                    .ps-block__left: i.icon-user
+                    .ps-block__right
+                        a(href='my-account.html') Login
+                        a(href='my-account.html') Register
+    .header__filter
+        button.ps-shop__filter-mb#filter-sidebar
+            i.icon-equalizer
+            span Filter
+        .header__sort
+            i.icon-sort-amount-desc
+            select.ps-select
+                option(value=1) Sort by
+                option(value=2) Sort by average rating
+                option(value=3) Sort by latest
+                option(value=4) Sort by price: low to high
+                option(value=5) Sort by price: high to low
+
+include ../cart-mobile
+include ../navigation-mobile
+include ../navigation-footer
+include ../search-sidebar
+include ../menu-mobile

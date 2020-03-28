@@ -1,0 +1,107 @@
+include ../../data/menu/menu
+include ../../data/menu/menu-product-categories
+include ../../data/menu/menu-technology
+.ps-promotion-kids
+    .container
+        a(href='#'): img(src="img/promotions/home-kids/top.jpg" alt="")
+header.header.header--standard.header--kids(data-sticky="true")
+    .header__top
+        .container
+            .header__left
+                a(href='index.html').ps-logo: img(src="img/logo-kids.png" alt="")
+                include modules/menu-dropdown
+            .header__center
+                form(action="index.html" method="get" class="ps-form--quick-search")
+                    .form-group--icon
+                        i.icon-chevron-down
+                        select.form-control
+                            option(value="1") All
+                            option(value="1") Bags
+                            option(value="1") Shoes
+                            option(value="1") Men
+                            option(value="1") Women
+                            option(value="1") Sunglasses
+                    input.form-control(type="text" placeholder="I'm shopping for...")
+                    button Search
+            .header__right
+                .header__actions
+                    a(href='#').header__extra
+                        i.icon-heart
+                        span: i 0
+                    .ps-cart--mini
+                        a(href='#').header__extra
+                            i.icon-bag2
+                            span: i 0
+                        include modules/mini-cart
+                    .ps-block--user-header
+                        .ps-block__left: i.icon-user
+                        .ps-block__right
+                            a(href='my-account.html') Login
+                            a(href='my-account.html') Register
+    nav.navigation
+        .container
+            .navigation__left
+                .menu--product-categories
+                    .menu__toggle.active
+                        i.icon-menuw
+                        span  Shop by Department
+                    .menu__content: +makeMenu(menuBanner, 'menu--dropdown')
+            .navigation__right
+                ul.menu.menu--recent-view
+                    li.menu-item-has-children
+                        a(href='#') Your Recently Viewed
+                        .navigation__recent-products
+                            .ps-carousel--nav.owl-slider(
+                            data-owl-auto= 'true',
+                            data-owl-loop= 'true',
+                            data-owl-speed= '5000',
+                            data-owl-gap= '30',
+                            data-owl-nav= 'true',
+                            data-owl-dots= 'false',
+                            data-owl-item= '8',
+                            data-owl-item-xs= '3',
+                            data-owl-item-sm= '4',
+                            data-owl-item-md= '5',
+                            data-owl-item-lg= '6',
+                            data-owl-duration= '1000',
+                            data-owl-mousedrag= 'on'
+                            )
+                                - for (let i = 0; i < 7; i ++)
+                                    a(href='#'): img(src="img/products/home-kids/recent-view/"+(i+1)+".jpg" alt="")
+                            p
+                                a(href='shop-default.html') See all your recently viewed items
+
+                ul.navigation__extra
+                    li: a(href='#') Sell on Martfury
+                    li: a(href='#') Tract your order
+                    li
+                        .ps-dropdown
+                            a(href='#') US Dollar
+                            ul.ps-dropdown-menu
+                                li: a(href='#') Us Dollar
+                                li: a(href='#') Euro
+                    li
+                        .ps-dropdown.language
+                            a(href='#')
+                                img(src="img/flag/en.png" alt="")
+                                | English
+                            ul.ps-dropdown-menu
+                                li: a(href='#')
+                                    img(src="img/flag/germany.png" alt="")
+                                    |  Germany
+                                li: a(href='#')
+                                    img(src="img/flag/fr.png" alt="")
+                                    |  France
+
+
+
+
+
+
+
+
+
+
+
+
+

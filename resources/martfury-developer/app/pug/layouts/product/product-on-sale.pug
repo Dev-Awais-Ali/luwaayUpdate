@@ -1,0 +1,29 @@
+extends ../../master
+
+block data
+    include ../../data/product/product-default
+
+block page_header
+    - let producSticky = menuProduct.layout.onSale;
+    +headerProductSticky(producSticky.img, producSticky.title)
+    include ../../shared/headers/product/header-for-product
+    include ../../shared/headers/product/header-mobile-product
+
+block page_content
+    .ps-breadcrumb
+        .ps-container
+            ul.breadcrumb
+                li: a(href='index.html') Home
+                li: a(href='shop-default.html') Health & Beauty
+                li: a(href='shop-default.html') Equipments
+                li Baxter Care Hair Kit For Bearded Mens
+    .ps-page--product
+        .ps-container
+            include ../../partials/product/product-on-sale
+            include ../../partials/product/modules/customer-bought
+            include ../../partials/product/modules/related-product
+
+    include ../../partials/sections/newsletter
+    include ../../shared/footers/footer
+
+

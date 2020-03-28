@@ -1,0 +1,22 @@
+extends ../../master
+block data
+    include ../../utilties/product-mixins
+    include ../../data/home-1/home-products
+    include ../../data/home-kids/home-data
+    include ../../data/home-kids/menu-banner
+block append style
+    link(rel="stylesheet", href="css/home-photo.css")
+
+block page_header
+    include ../../shared/headers/header-photo
+    include ../../shared/headers/header-mobile--photo
+
+block page_content
+    main#homepage-photo
+        include ../../partials/homepages/home-photo/home-search
+        include ../../partials/homepages/home-photo/home-media
+        include ../../partials/homepages/home-photo/home-testimonial
+        include ../../partials/homepages/home-photo/home-share-work
+        include ../../partials/homepages/home-photo/home-blog
+        include ../../partials/homepages/home-photo/home-brands
+        include ../../shared/footers/footer-photo

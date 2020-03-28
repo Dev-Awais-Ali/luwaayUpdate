@@ -1,0 +1,14 @@
+include modules/eat-and-drink
+include modules/apparels
+include modules/baby-out
+include modules/pregnancy
+
+.ps-block--recent-viewed
+    .ps-block__header
+        h3 Recently Viewed Products
+        a(href='shop-default.html') View All
+    .ps-block__content
+        - for (let i = 0; i < 7; i ++)
+            a(href='#'): img(src="img/products/home-kids/recent-view/"+(i+1)+".jpg" alt="")
+
+

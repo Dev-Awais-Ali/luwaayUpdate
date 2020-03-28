@@ -1,0 +1,21 @@
+header.header.header--mobile.header--mobile-product(data-sticky='true')
+    .navigation--mobile
+        .navigation__left
+            a(href='shop-default.html').header__back
+                i.icon-chevron-left
+                strong Back to Categories
+        .navigation__right
+            .header__actions
+                .ps-cart--mini
+                    a(href='#').header__extra
+                        i.icon-bag2
+                        span: i 0
+                    include ../modules/mini-cart
+                .ps-block--user-header
+                    .ps-block__left: i.icon-user
+                    .ps-block__right
+                        a(href='my-account.html') Login
+                        a(href='my-account.html') Register
+nav.navigation--mobile-product
+    a(href='shopping-cart.html').ps-btn.ps-btn--black Add to cart
+    a(href='checkout.html').ps-btn Buy Now

@@ -1,0 +1,54 @@
+.ps-my-account-2
+    .container
+        .ps-section__wrapper
+            .ps-section__left
+                form(action="link.html" method="get" class="ps-form--account ps-tab-root")
+                    ul.ps-tab-list
+                        li.active: a(href='#sign-in') Login
+                        li: a(href='#register') Register
+                    .ps-tabs
+                        #sign-in.ps-tab.active
+                            .ps-form__content
+                                h5 Log In Your Account
+                                .form-group
+                                    input.form-control(type="text" placeholder="Username or email address")
+                                .form-group.form-forgot
+                                    input.form-control(type="text" placeholder="Password")
+                                    a(href='') Forgot?
+                                .form-group
+                                    +checkbox('remember-me', 'remember-me', 'Rememeber me', '', '')
+                                .form-group.submit
+                                    button.ps-btn.ps-btn--fullwidth Login
+                        #register.ps-tab
+                            .ps-form__content
+                                h5 Register An Account
+                                .form-group
+                                    input.form-control(type="text" placeholder="Username or email address")
+                                .form-group
+                                    input.form-control(type="text" placeholder="Password")
+                                .ps-form__decs
+                                    +radio('user-type-1', 'user-type', "I am a customer", '', '', '')
+                                    +radio('user-type-2', 'user-type', "I am a vendor", '', '', '')
+                                    p Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our
+                                        a(href='#') privacy policy.
+                                .form-group.submit
+                                    button.ps-btn.ps-btn--fullwidth Register
+            .ps-section__right
+                figure.ps-section__desc
+                    figcaption Sign up today and you will be able to:
+                    p MartFury Buyer Protection has you covered from click to delivery. Sign up or sign in and you will be able to:
+                    ul.ps-list
+                        li
+                            i.icon-credit-card
+                            span SPEED YOUR WAY THROUGH CHECKOUT
+                        li
+                            i.icon-clipboard-check
+                            span TRACK YOUR ORDERS EASILY
+                        li
+                            i.icon-bag2
+                            span KEEP A RECORD OF ALL YOUR PURCHASES
+                .ps-section__coupon
+                    span $25
+                    aside
+                        h5 A small gift for your first purchase
+                        p Martfury give $25 as a small gift for your first purchase. Welcome to Martfury!

@@ -1,0 +1,81 @@
+mixin postMedia(image)
+    .ps-product--photo
+        a(href='product-default.html'): img(src=image alt="")
+        .ps-product__content
+            a(href='#'): span PixaStudio
+            ul.ps-product__actions
+                li: a(href='#' data-toggle="tooltip" data-placement="top" title="Add To Cart"): i.icon-bag2
+                li: a(href='#' data-toggle="tooltip" data-placement="top" title="Quick View"): i.icon-eye
+                li: a(href='#' data-toggle="tooltip" data-placement="top" title="Add to Whishlist"): i.icon-heart
+mixin topPhotoGrapher()
+    .ps-block--top-photographer.bg--cover(data-background="img/home/home-photo/popular-bg.jpg")
+        .ps-block__header
+            p Leaderboard Last 30 Days
+            h3 Top Photographers
+        .ps-block__content
+            .ps-block__author
+                .ps-block__author-thumbnail
+                    img(src="img/home/home-photo/author-1.png" alt="")
+                figure
+                    a(href='#') Alice Felani
+                    p 1,2K Followers  |  25,5K Sales
+            .ps-block__author
+                .ps-block__author-thumbnail
+                    img(src="img/home/home-photo/author-2.png" alt="")
+                figure
+                    a(href='#') Roberto Firmino
+                    p 1,2K Followers  |  25,5K Sales
+            .ps-block__author
+                .ps-block__author-thumbnail
+                    img(src="img/home/home-photo/author-3.png" alt="")
+                figure
+                    a(href='#') Jurgen Kloop
+                    p 1,2K Followers  |  25,5K Sales
+        .ps-block__footer
+            a(href='#') View more
+                i.icon-chevron-right
+.ps-home-media
+    .ps-section__header
+        ul.ps-list
+            li.active: a(href='#')  Editorial
+            li: a(href='#') Wallpapers
+            li: a(href='#') Textures & Patterns
+            li: a(href='#') Nature
+            li: a(href='#') Current Events
+            li: a(href='#') Architecture
+            li: a(href='#') Business & Work
+            li: a(href='#') Film
+            li: a(href='#') Animals
+            li: a(href='#') Travel
+            li: a(href='#') Fashion
+            li: a(href='#') Food & Drink
+            li: a(href='#') Spirituality
+            li: a(href='#') Experimental
+            li: a(href='#') People
+            li: a(href='#') Health
+    .ps-section__content
+        .masonry-wrapper(data-col-lg="4" data-col-md="3" data-col-sm="2" data-col-xs='1' data-gap="30" data-radio='100%')
+            .ps-masonry
+                .grid-sizer
+                .grid-item: .grid-item__content-wrapper: +postMedia("img/home/home-photo/home-content/1.jpg")
+                .grid-item: .grid-item__content-wrapper: +postMedia("img/home/home-photo/home-content/2.jpg")
+                    img(src="img/home/home-photo/home-content/2.jpg" alt="")
+                .grid-item: .grid-item__content-wrapper: +postMedia("img/home/home-photo/home-content/3.jpg")
+                .grid-item: .grid-item__content-wrapper
+                    +topPhotoGrapher
+                    //-img(src="img/home/home-photo/home-content/4.jpg" alt="")
+                .grid-item: .grid-item__content-wrapper: +postMedia("img/home/home-photo/home-content/6.jpg")
+                .grid-item: .grid-item__content-wrapper: +postMedia("img/home/home-photo/home-content/5.jpg")
+                .grid-item: .grid-item__content-wrapper: +postMedia("img/home/home-photo/home-content/8.jpg")
+                .grid-item: .grid-item__content-wrapper: +postMedia("img/home/home-photo/home-content/7.jpg")
+                .grid-item: .grid-item__content-wrapper: +postMedia("img/home/home-photo/home-content/9.jpg")
+                .grid-item: .grid-item__content-wrapper: +postMedia("img/home/home-photo/home-content/10.jpg")
+                .grid-item: .grid-item__content-wrapper: +postMedia("img/home/home-photo/home-content/13.jpg")
+                .grid-item: .grid-item__content-wrapper: +postMedia("img/home/home-photo/home-content/12.jpg")
+                .grid-item: .grid-item__content-wrapper: +postMedia("img/home/home-photo/home-content/11.jpg")
+                .grid-item: .grid-item__content-wrapper: +postMedia("img/home/home-photo/home-content/17.jpg")
+                .grid-item: .grid-item__content-wrapper: +postMedia("img/home/home-photo/home-content/14.jpg")
+                .grid-item: .grid-item__content-wrapper: +postMedia("img/home/home-photo/home-content/16.jpg")
+                .grid-item: .grid-item__content-wrapper: +postMedia("img/home/home-photo/home-content/15.jpg")
+    .ps-section__footer
+        a(href='#').ps-section__morelink More

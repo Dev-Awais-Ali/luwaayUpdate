@@ -1,0 +1,32 @@
+{
+    "layout": {
+        "default": {
+            "title": "Marshall Kilburn Portable Wireless Speaker",
+            "img": "img/products/detail/fullwidth/1.jpg"
+        },
+        "countdown": {
+            "title": "Korea Long Sofa Fabric In Blue Navy Color",
+            "img": "img/products/detail/fullwidth/1.jpg"
+        },
+        "instagram": {
+            "title": "Unero Military Classical Backpack",
+            "img": "img/products/detail/instagram/1.jpg"
+        },
+        "affiliate": {
+            "title": "Unero Military Classical Backpack",
+            "img": "img/products/detail/affiliate/1.jpg"
+        },
+        "onSale": {
+            "title": "Marshall Kilburn Portable Wireless Speaker",
+            "img": "img/products/detail/on-sale/1.jpg"
+        },
+        "groupped": {
+            "title": "Edifier Powered Bookshelf Speakers",
+            "img": "img/products/detail/groupped/1.jpg"
+        },
+        "groupped": {
+            "title": "Magic Bullet NutriBullet Pro 900 Series Blender",
+            "img": "img/products/detail/out-stock/1.jpg"
+        }
+    }
+}
