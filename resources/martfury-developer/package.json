@@ -19,7 +19,7 @@
     "homepage": "https://bitbucket.org/minhnghiadev/base_html#readme",
     "dependencies": {
         "autoprefixer": "^9.6.0",
-        "browser-sync": "^2.26.7",
+        "browser-sync": "^2.27.10",
         "cssnano": "^4.1.10",
         "del": "^5.1.0",
         "gulp": "^4.0.2",
